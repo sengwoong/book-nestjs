@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { ServiceB } from './service-B';
 
-@Controller({path:'cats',scope:Scope.Request})
+@Controller()
 export class AppController {
   constructor(
     private readonly serviceB: ServiceB,

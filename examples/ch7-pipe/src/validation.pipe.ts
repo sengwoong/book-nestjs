@@ -2,8 +2,6 @@ import { ArgumentMetadata, BadRequestException, Injectable, PipeTransform } from
 import { plainToClass } from 'class-transformer';
 import { validate } from 'class-validator';
 
-
-//npm i --save class-validator class-transformer
 @Injectable()
 export class ValidationPipe implements PipeTransform<any> {
   // transform(value: any, metadata: ArgumentMetadata) {

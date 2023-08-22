@@ -4,8 +4,6 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 // import { ValidationPipe } from 'src/validation.pipe';
 
-////npm i --save class-validator class-transformer
-
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) { }
