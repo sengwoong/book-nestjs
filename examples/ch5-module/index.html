@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>글 작성 페이지</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input[type="text"], textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .right_pothion{
+    float: right;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>글 작성 페이지</h1>
+  <form class="clearfix">
+    <div class="form-group">
+      <label for="title">제목</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="content">내용</label>
+      <textarea id="content" name="content" rows="4" required></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="attachment">파일첨부</label>  
+      <input type="file" id="attachment" name="attachment">
+    </div>
+    <div  class="right_pothion "> 
+    <button type="list">목록</button>
+    <button type="reset">초기화</button>
+    <button type="submit">작성</button>
+    </div >
+  </form>
+</div>
+</body>
+</html>
