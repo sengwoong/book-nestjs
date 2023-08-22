@@ -11,6 +11,9 @@ export class UsersController {
   create(@Body() createUserDto: CreateUserDto) {
     const { name, email } = createUserDto;
 
+   this.usersService.create(createUserDto);
+   
+
     return `유저를 생성했습니다. 이름: ${name}, 이메일: ${email}`;
   }
 
@@ -27,17 +30,17 @@ export class UsersController {
       throw new NotFoundException('User is not found');
     }
 
-    return this.usersService.findOne(+id);
+    return this.usersService.findOne(id);
   }
 
   @HttpCode(202)
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
-    return this.usersService.update(+id, updateUserDto);
+    return this.usersService.update(id, updateUserDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.usersService.remove(+id);
+    return this.usersService.remove(id);
   }
 }
