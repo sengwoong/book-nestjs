@@ -8,7 +8,12 @@ import {
 } from 'nest-winston';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from 'src/exception/http-exception.filter';
-
+//인터셉터
+// 메소드 실행 전/후 추가 로직을 바인딩
+//함수에서 반환된 결과를 변환
+//함수에서 던져진 예외를 변환
+//기본 기능의 동작을 확장
+//특정 조건에 따라 기능을 완전히 재정의
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     logger: WinstonModule.createLogger({

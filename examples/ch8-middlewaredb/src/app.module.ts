@@ -25,6 +25,8 @@ import { Migration } from 'typeorm';
       migrationsTableName: 'migrations', // Name of the migration table
       //npm run typeorm migration:create src/migrations/CreateUser
       //이떄 generate 는 자동생성
+
+      
       entities:[UserEntity]
     }),
   ],

@@ -3,7 +3,7 @@ import { utilities as nestWinstonModuleUtilities, WinstonModule } from 'nest-win
 import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-
+//npm i ==save @nest.js/schedule @types/cron
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     logger: WinstonModule.createLogger({

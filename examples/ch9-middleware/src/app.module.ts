@@ -12,6 +12,7 @@ export class AppModule implements NestModule {
     consumer
       .apply(LoggerMiddleware, Logger2Middleware)
       // .forRoutes('/users')
+      //exclude은 안하겠다.
       // .exclude({ path: 'users', method: RequestMethod.GET },)
       .forRoutes(UsersController)
   }

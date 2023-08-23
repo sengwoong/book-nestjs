@@ -12,6 +12,7 @@ export class UsersController {
   constructor(
     private usersService: UsersService,
     private authService: AuthService,
+    // AuthService 주입
   ) { }
 
   @Post()

@@ -1,6 +1,8 @@
 import { ArgumentsHost, Catch, ExceptionFilter, HttpException, InternalServerErrorException, Logger } from '@nestjs/common';
 import { Request, Response } from 'express';
 
+//버그수정
+// @UseFilter(HttpExceptionFilter)
 @Catch()
 export class HttpExceptionFilter implements ExceptionFilter {
   constructor(private logger: Logger) { }
