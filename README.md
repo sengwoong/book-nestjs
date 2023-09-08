@@ -4,7 +4,7 @@
 
 ![](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791192469560.jpg)
 
-## 오류 수정 페이지
+## 오류 수정 페이지ㄹ
 [FixError.md](FixError.md)
 
 ---
